@@ -1,0 +1,423 @@
+@charset "utf-8";
+@import url('http://fonts.googleapis.com/earlyaccess/jejugothic.css');
+@import url('http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css');
+/*font-family: 'Jeju Gothic', sans-serif;*/
+/*font-family: 'Jeju Myeongjo', serif;*/
+
+
+
+/*헤더 영역*/
+header {
+	height:123px;
+	background:#fff;
+	width:100%;
+	padding-top:20px;
+	box-shadow:0px 5px 15px rgba(0,0,0,0.3);
+	font-family: 'Jeju Gothic', sans-serif;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:999;
+}
+header::after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.headerWrap {
+	width:1400px;
+	height:100px;
+	margin:0 auto;
+}
+
+.headerWrap::after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+
+.headerWrap h1 {
+	float:left;
+	margin-left:30px;
+}
+.headerWrap h1 img {
+	width:70px;
+	margin-top:0px;
+}
+
+.gnb {
+	float:left;
+	margin-left:50px;
+}
+.gnb > li {
+	width:200px; 
+	float:left; 
+	height:100px;
+}
+
+.gnb > li > h2 {
+	height:100px; 
+	line-height:100px;
+	text-align:center; 
+	margin-bottom:20px;
+	font-size:20px;
+}
+
+.gnb > li > h2 > a {
+	color:#aaa;
+	font-weight:500;
+	transition:all 0.3s;
+}
+.gnb>li>h2>a:hover {
+	color:royalblue;
+}
+
+.gnb > li > ul > li {
+	height:30px;
+	text-align:center;
+	line-height:30px;
+}
+.gnb>li>ul>li>a {
+	color:#555;
+	transition:all 0.3s;
+}
+.gnb>li>ul>li>a:hover {
+	color:orange;
+}
+
+.headerMenu {
+	float:left;
+	margin-left:30px;
+	line-height:100px;
+}
+
+.headerMenu li {
+	float:left;
+	margin:0 10px;
+}
+
+
+
+/*슬라이드 영역*/
+
+.slideSection {
+    margin-top:123px;
+    width:100%;
+    height:650px;
+    position:relative;
+    background:url(../image/bgptrn2.jpg) center/cover;
+}
+
+.slideView {
+    width:1400px;
+    height:650px;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+.slide {
+    width:2800px;
+    height:650px;
+}
+
+.slide li {
+    float:left;
+    width:1400px;
+    height:650px;
+}
+
+.slide li img {
+    display:block;
+}
+
+.slideSection button {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    border:none;
+    outline:none;
+    cursor:pointer;
+    padding:10px 15px;
+    font-size:30px;
+    background:navy;
+    color:#fff;
+    transition:all 0.2s;
+}
+.slideSection button:hover {
+	background:orange;
+}
+
+.prev {
+	left:5%;
+}
+
+.next {
+    right:5%;
+}
+
+
+
+
+/*콘텐츠 영역*/
+
+.dentalSection {
+    width:100%;
+    min-width:1400px;
+    margin:0 auto;
+}
+
+.dental {
+    width:100%;
+    min-width:1400px;
+    height:400px;
+}
+.dental::after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.dentalImg {
+    width:60%;
+    height:100%;
+}
+
+.dentalTxt {
+    width:40%;
+    height:100%;
+    position:relative;
+}
+
+.dentalImg1 {
+    float:right;
+    background:url(../image/dental1.png) no-repeat center/cover;
+}
+.dentalImg2 {
+    float:left;
+    background:url(../image/dental2.jpg) no-repeat center/cover;
+}
+.dentalImg3 {
+    float:right;
+    background:url(../image/dental3.png) no-repeat center/cover;
+}
+
+.dentalTxt1 {
+    float:left;
+}
+.dentalTxt2 {
+    float:right;
+    background:#333;
+}
+.dentalTxt3 {
+    float:left;
+    background:#374d7c;
+}
+
+.dtBox {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    height:200px;
+}
+.dtBox p {
+    margin-top:45px;
+    font-family: 'Jeju Gothic', serif;
+    font-size:16px;
+    color:#fff;
+}
+.dtBox h2 {
+    margin-top:20px;
+    font-family: 'Jeju Gothic', sans-serif;
+    font-weight: 500;
+}
+.dtBox h2 a {
+	font-size:40px;
+	color:#fff;
+}
+
+.dtBox1 {
+    left:40%;
+    border-left:5px solid orange;
+    padding-left:30px;
+}
+.dtBox2 {
+    right:15%;
+    text-align:right;
+    border-right:5px solid orange;
+    padding-right:30px;
+}
+.dtBox3 {
+    left:20%;
+    border-left:5px solid orange;
+    padding-left:30px;
+}
+
+
+
+/*배너 영역*/
+
+.bannerSection {
+    width:100%;
+    min-width:1400px;
+    margin:0 auto;
+    position:relative;
+    background:#e5dfd7;
+}
+.bannerSection::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.time {
+    width:50%;
+    float:left;
+    padding:100px 30px 100px 0px;
+}
+
+.time img {
+    display:block;
+    width:495px;
+    float:right;
+}
+
+.banners {
+    width:25%;
+    float:right;
+    position:absolute;
+    top:50%;
+    right:0;
+    transform: translate(-70%, -50%);
+    text-align: center;
+}
+.banner {
+	display:block;
+    float:left;
+    width:49.3%;
+    padding:60px 0;
+    font-family: 'Jeju Myeongjo', serif;
+    transition:all 0.2s;
+}
+.banner i {
+    font-size:50px;
+    color:#333;
+}
+.banner p {
+    padding-top:15px;
+    color:#333;
+    font-size:18px;
+    font-weight: 600;
+}
+.banner:hover { opacity:0.7; }
+
+.banner1 {
+    background:#d1dce6;
+}
+.banner2 {
+    background:#eeebd5;
+}
+.banner3 {
+    background:#cfdfb9;
+}
+.banner4 {
+    background:#dec8c8;
+}
+
+
+
+/*지도 영역*/
+.map {
+    width:100%;
+    min-width:1400px;
+}
+
+.map h3 {
+    text-align:center;
+    padding:100px 0;
+    font-size:50px;
+    font-family: 'Jeju Gothic', sans-serif;
+    color:#555;
+}
+
+.map iframe {
+    width:100%;
+    display:block;
+}
+
+
+
+/*푸터 영역*/
+
+.footer {
+    width:100%;
+    min-width:1400px;
+    font-family: 'Jeju Myeongjo', serif;
+}
+
+.upFooter {
+    width:100%;
+    background:#333;
+    text-align:center;
+    padding:25px 0;
+}
+.upFooter img {
+    display:inline-block;
+    width:70px;
+    vertical-align: middle;
+    margin-right:25px;
+}
+.upFooter address {
+    font-style: normal;
+    display:inline-block;
+    color:#fff;
+}
+
+.downFooter {
+    background:#fff;
+    padding:25px 0;
+    width:100%;
+    min-width:1400px;
+    text-align:center;
+    font-size:15px;
+    font-weight:600;
+}
+.downFooter a {
+    color:#333;
+}
+.downFooter span {
+    color:#333;
+}
+
+.footer .talk {
+    position:fixed;
+    left: 3%;
+    bottom:5%;
+    width:100px;
+    height:100px;
+    animation: talk 1.5s infinite;
+}
+
+.footer .goup {
+    position:fixed;
+    right:3%;
+    bottom:5%;
+    width:70px;
+}
+
+
+
+
+/*애니메이션*/
+@keyframes talk {
+	0% {
+        bottom:5%;
+	}
+	70% {
+        bottom:7%;
+	}
+	100% {
+        bottom:5%;
+	}
+}
